@@ -1,0 +1,60 @@
+{% extends 'category.html' %}
+
+{% block card %}
+    <div class="news-slider__item swiper-slide">
+          <a href="http://127.0.0.1:8000/home" class="news__item">
+            <div class="news-date">
+              <span class="news-date__title">Return</span>
+              <span class="news-date__txt">Home</span>
+            </div>
+            <div class="news__title">
+              Sweet home alabama
+            </div>
+            <p class="news__txt">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+            </p>
+            <div class="news__img">
+              <img src="../static/images/category/" alt="news">
+            </div>
+          </a>
+        </div>
+        <!-- first card end -->
+
+          <div class="news-slider__item swiper-slide" >
+          <a href="{{ url_for('home')}}" class="news__item">
+            <div class="news-date">
+              <span class="news-date__title">Panda</span>
+              <span class="news-date__txt">Mercedes analyse</span>
+            </div>
+            <div class="news__title">
+              Analysizn some
+            </div>
+            <p class="news__txt">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+            </p>
+            <div class="news__img">
+              <img src="../static/images/category/" alt="news">
+            </div>
+          </a>
+        </div>
+                <div class="news-slider__item swiper-slide" >
+          <a href="{{ url_for('map')}}" class="news__item">
+            <div class="news-date">
+              <span class="news-date__title">Flask</span>
+              <span class="news-date__txt">Map</span>
+            </div>
+            <div class="news__title">
+              Volcanus in america
+            </div>
+            <p class="news__txt">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+            </p>
+            <div class="news__img">
+              <img src="../static/images/category/" alt="news">
+            </div>
+          </a>
+        </div>
+
+
+         </div>
+{% endblock %}

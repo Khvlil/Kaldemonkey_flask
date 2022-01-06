@@ -1,0 +1,852 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+html,body {
+    width: 100%;
+  	margin: 0;
+  	padding: 0;
+	overflow-x: hidden;
+
+}
+
+.hero{
+	height: 100vh;
+	width: 100%;
+	background-color: #0a0a0a;
+	background-image: url(../images/covers/mercedes-first-cover-HD.png);
+	background-size: cover;
+	background-position: center;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.logo{
+	color: white;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+span{
+	color: #902427;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #f9004d;
+	transition: .4s;
+}
+.btn{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+.content{
+	position: absolute;
+	top: 20%;
+	left:8%;
+	transform: translateY(-50%);
+}
+h1{
+	color: white;
+	margin: 20px 0px 20px;
+	font-size: 75px;
+}
+h3{
+	color: white;
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+h5{
+	color: #fcfc;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+.newslatter form{
+	width: 380px;
+	max-width: 100%;
+	position: relative;
+}
+.newslatter form input:first-child{
+	display: inline-block;
+	width: 100%;
+	padding: 14px 130px 14px 15px;
+	border: 2px solid #f9004d;
+	outline: none;
+	border-radius: 30px;
+}
+.newslatter form input:last-child{
+	position: absolute;
+	display: inline-block;
+	outline: none;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 30px;
+	background-color:#0a0a0a;
+	color: white;
+	box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+	top: 6px;
+	right: 6px; 
+}
+
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #0a0a0a;
+	background-image: url(../images/covers/R.png);
+	background-size: cover;
+	background-position: center;
+
+}
+	
+.about img{
+	height: 480px;
+	width: 800px;
+    float: left;
+}
+.about-text{
+	width: 550px;
+	transform: translateX(100%);
+	opacity: 0;
+	animation: about-text 1.5s ease-out forwards;
+
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: #ffff;
+	font-size: 24px;
+	margin-bottom: 45px;
+	display: block;
+    text-align: left;
+
+}
+
+
+.about-1{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #0a0a0a;
+	background-image: url(../images/covers/merc-diminsion-cover.png);
+	background-size: cover;
+	background-position: center;
+	scroll-snap-align:start;
+}
+
+.about-1 p{
+	font-size: 20px ;
+}
+
+.about-1 .about-text h2{
+	font-size: 50px ;
+}
+
+
+.about-1 img{
+	height: 580px;
+	width: 670px;
+	margin: auto 50px;
+    float: left;
+}
+
+
+
+.about-2{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #0a0a0a;
+	background-image: url(../images/covers/merc-engine-cover.png);
+	background-size: cover;
+	background-position: center;
+	scroll-snap-align:start;
+}
+
+.about-2 img{
+	height: 580px;
+	width: 670px;
+	margin: auto 50px;
+    float: left;
+}
+
+.about-3{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #0a0a0a;
+	background-image: url(../images/covers/forward-merc-cover.png);
+	background-size: cover;
+	background-position: center;
+	scroll-snap-align:start;
+}
+
+.about-3 img{
+	height: 480px;
+	width: 570px;
+	margin: auto 50px;
+    float: left;
+}
+
+
+.about-4{
+	width: 100%;
+	padding: 100px;
+	background-color: #0a0a0a;
+	background-image: url(../images/covers/merc-trans-cover.png);
+	background-size: cover;
+	background-position: center;
+	scroll-snap-align:start;
+}
+
+.about-4 img{
+	height: 580px;
+	width: 670px;
+	margin: auto 50px;
+    float: left;
+}
+
+.about-4 p{
+	font-size: 25px ;
+}
+
+.about-4 .about-text h2{
+	font-size: 50px ;
+}
+
+
+
+
+
+button{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+.service{
+	background: #0a0a0a;
+	width: 100%;
+	padding: 100px 0px;
+}
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+.card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: #f9004d;
+
+}
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color: #fcfc;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.card .button{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+.contact-me{
+	width: 100%;
+	height: 290px;
+	background: #191919;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.contact-me p{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.contact-me .button-two{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.contact-me .button-two:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+footer{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #f9004d;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color:#f9004d;
+	bottom: 35px;
+	font-size: 14px; 
+}
+
+/* slide header text
+  slide the text in up home page
+ */
+
+.animation {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px;
+	Letter-spacing: 1px;
+	display: inline-block;
+	animation: fadeIn 1.5s forwards;
+	opacity: 0;
+	transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.first{
+	text-align: center;
+       display: inline-block;
+       animation: firstspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+       z-index: 1;
+      position: relative;
+}
+.slide{
+       display: inline-flex;
+       overflow: hidden;}
+.second{
+   font-weight: 100;
+    z-index: -1;
+    display: inline-block;
+    animation: secondspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.third{
+   font-weight: 100;
+    z-index: -1;
+    display: inline-block;
+    animation: thirdspan 2s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.forth{
+   	font-weight: 100;
+    z-index: -1;
+    display: inline-block;
+    animation: forthspan 0.8s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.fifth{
+   	font-weight: 100;
+    z-index: -1;
+    display: inline-block;
+    animation: fifthspan 0.8s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+		  opacity: 1;
+		  transform: scale(1);
+	  }
+    100% {
+		   opacity: 1;
+		   transform: scale(1);
+	   }
+}
+
+@keyframes firstspan {
+	0% {
+		transform: translateX(50%);
+	}
+	60% {
+		transform: translateX(50%);
+	}
+	100% {
+		transform: translatex(0%);
+	}
+}
+
+@keyframes secondspan{
+    0%{
+        transform: translateX(-100%);
+    }
+    60%{
+       transform: translateX(-100%);
+    }
+    100%{
+        transform: translatex(0%);
+    }
+}
+
+@keyframes forthspan{
+    0%{
+        transform: translateX(-100%);
+    }
+    60%{
+       transform: translateX(100%);
+    }
+    100%{
+        transform: translatex(0%);
+    }
+}
+
+@keyframes thirdspan{
+    0%{
+        transform: translateX(-100%);
+    }
+    70%{
+       transform: translateX(0%);
+    }
+    100%{
+        transform: translatex(0%);
+    }
+}
+
+
+@keyframes fifthspan{
+    0%{
+        transform: translateX(-100%);
+    }
+    70%{
+       transform: translateX(0%);
+    }
+    100%{
+        transform: translatex(0%);
+    }
+}
+
+
+
+/* down navbar */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Lato', sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.menu {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  cursor: pointer;
+  pointer-events: none;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.menu:hover {
+  pointer-events: all;
+}
+.label {
+  display: inline-block;
+  cursor: pointer;
+  pointer-events: all;
+}
+.spacer {
+  display: inline-block;
+  width: 80px;
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.spacer:before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #ffffff;
+  height: 1px;
+  width: 0%;
+  transition: width 0.25s ease;
+  transition-delay: 0.7s;
+}
+.item {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  top: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease, top 0.5s ease;
+  transition-delay: 0;
+}
+span a {
+	color: #1b3419;
+  transition: color 0.5s ease;
+}
+.item:hover span a {
+  color: #ff0000;
+}
+.menu:hover .spacer:before {
+  width: 100%;
+  transition-delay: 0s;
+}
+.menu:hover .item {
+  opacity: 1;
+  top: 0px;
+}
+.item:nth-child(1) {
+  transition-delay: 0.45s;
+}
+.item:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.item:nth-child(3) {
+  transition-delay: 0.35s;
+}
+.item:nth-child(4) {
+  transition-delay: 0.3s;
+}
+.item:nth-child(5) {
+  transition-delay: 0.25s;
+}
+.item:nth-child(6) {
+  transition-delay: 0.2s;
+}
+.item:nth-child(7) {
+  transition-delay: 0.15s;
+}
+.item:nth-child(8) {
+  transition-delay: 0.1s;
+}
+.item:nth-child(9) {
+  transition-delay: 0.05s;
+}
+.item:nth-child(10) {
+  transition-delay: 0s;
+}
+.menu:hover .item:nth-child(1) {
+  transition-delay: 0.25s;
+}
+.menu:hover .item:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.menu:hover .item:nth-child(3) {
+  transition-delay: 0.35s;
+}
+.menu:hover .item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.menu:hover .item:nth-child(5) {
+  transition-delay: 0.45s;
+}
+.menu:hover .item:nth-child(6) {
+  transition-delay: 0.5s;
+}
+.menu:hover .item:nth-child(7) {
+  transition-delay: 0.55s;
+}
+.menu:hover .item:nth-child(8) {
+  transition-delay: 0.6s;
+}
+.menu:hover .item:nth-child(9) {
+  transition-delay: 0.65s;
+}
+.menu:hover .item:nth-child(10) {
+  transition-delay: 0.7s;
+}
+
+/* scroll down bottun */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.icon-scroll,
+.icon-scroll::before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-scroll {
+    width: 40px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    bottom: 2rem;
+}
+
+.icon-scroll::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin-left: -4px;
+    top: 15px;
+    border-radius: 50%;
+    animation: 1.5s scroll cubic-bezier(0.65, -0.55, 0.25, 1.5) infinite;
+}
+
+
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: translateY(0) scale(0.5);
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.5);
+    }
+}
+
+
+
+/* slide in text */
+
+@keyframes about-text {
+	20% {
+		opacity: 0;
+	}
+	60% {
+		transform: translateX(-5%);
+	}
+	75% {
+		transform: translateX(-2%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+   width: 12px;
+}
+::-webkit-scrollbar-thumb
+{
+   background: linear-gradient(transparent, #bd3939);
+   border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+   background: linear-gradient(transparent, #ff0000);
+}
+
+/* toest notification */
+
+.wrapper{
+    width: 340px;
+    position: absolute;
+	margin-left: 69rem;
+	transform: translate(1000%);
+}
+.toast{
+    width: 80%;
+    height: 70px;
+	padding-left: 5%;
+    background-color: #3a3a3a;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 1.3fr 6fr 0.5fr;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+.success{
+    border-left: 12px solid #BD3939FF;
+}
+
+.container-1,.container-2{
+    align-self: center;
+}
+.container-1 i{
+    font-size: 35px;
+}
+.success i{
+    color: #BD3939FF;
+	position: center;
+}
+
+.container-2{
+	position: relative;
+}
+.container-2 p:first-child {
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 25px;
+	padding: 0rem 0.5rem;
+}
+.container-2 p:last-child{
+    font-size: 12px;
+    font-weight: 400;
+	line-height: 30px;
+    color: #ffffff;
+}
+
+@keyframes myAnimation{
+  0%{
+    opacity: 1;
+    transform: translateX(100%);
+  }
+
+  10%{
+    opacity: 100;
+    transform: translate(0%);
+  }
+
+  98%{
+    opacity: 100;
+    transform: translate(0%);
+  }
+  100%{
+    display: none;
+    opacity: 100;
+    transform: translateY(-100%);
+	  animation-duration: 1000ms;
+  }
+}
+.wrapper {
+    animation-name: myAnimation;
+    animation-duration: 4s;
+	animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+}

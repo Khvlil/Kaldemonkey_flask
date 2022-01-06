@@ -1,0 +1,73 @@
+{% extends 'category.html' %}
+
+{% block card %}
+<div class="news-slider__item swiper-slide">
+          <a href="http://127.0.0.1:8000/home" class="news__item">
+            <div class="news-date">
+              <span class="news-date__title">Return</span>
+              <span class="news-date__txt">Home</span>
+            </div>
+            <div class="news__title">
+              Sweet home
+            </div>
+            <p class="news__txt">
+              Back to Django interface
+              <br>
+              <br>
+              <br>
+              <br>
+
+
+
+
+
+
+            </p>
+            <div class="news__img">
+              <img src="../static/images/category/home.jpg" alt="news">
+            </div>
+          </a>
+        </div>
+        <!-- first card end -->
+
+          <div class="news-slider__item swiper-slide" >
+          <a href="{{ url_for('home')}}" class="news__item">
+            <div class="news-date">
+              <span class="news-date__title">Panda</span>
+              <span class="news-date__txt">Mercedes analyzing</span>
+            </div>
+            <div class="news__title">
+              analyzing
+            </div>
+            <p class="news__txt">
+              Do you remember The poor panda,  here he explains the capabilities of the Mercedes car<br>
+              With its features and some other things that I don't know what its role is
+            </p>
+            <div class="news__img">
+              <img src="../static/images/category/pandas.jpg" alt="news">
+            </div>
+          </a>
+        </div>
+                <div class="news-slider__item swiper-slide" >
+          <a href="{{ url_for('map')}}" class="news__item">
+            <div class="news-date">
+              <span class="news-date__title">Flask</span>
+              <span class="news-date__txt">Map</span>
+            </div>
+            <div class="news__title">
+              Volcanus in america
+            </div>
+            <p class="news__txt">
+              Do you know how many volcanoes are in America?
+I don't know too, but here I show you the volcanoes in California and its neighbors
+
+            </p>
+            <div class="news__img">
+              <img src="../static/images/category/volcanos.jpg" alt="news">
+            </div>
+          </a>
+        </div>
+
+
+         </div>
+{% endblock %}
